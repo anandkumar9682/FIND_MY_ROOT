@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+  <androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <com.google.android.material.appbar.AppBarLayout
+          android:background="@color/white"
+          android:layout_width="match_parent"
+          android:layout_height="50dp">
+
+          <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:background="@drawable/shape_rd_20"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minHeight="?attr/actionBarSize">
+
+            <RelativeLayout
+              android:layout_marginRight="15dp"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+              <ImageButton
+                android:id="@+id/menu_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/shape_rd_50"
+                android:padding="5dp"
+                android:src="@drawable/ic_menu" />
+
+              <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="@string/header_name"
+                android:textColor="@color/white"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+              <ImageButton
+                android:id="@+id/ref"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/shape_rd_50"
+                android:padding="5dp"
+                android:src="@drawable/refresh" />
+
+            </RelativeLayout>
+
+          </androidx.appcompat.widget.Toolbar>
+
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+      </LinearLayout>
+
+
+      <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/recyclerView"
+          android:layout_width="match_parent"
+          android:scrollbars="vertical"
+          android:layout_height="match_parent"
+          />
+
+    </LinearLayout>
+
+    <com.google.android.material.navigation.NavigationView
+      android:id="@+id/navigationView"
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      app:itemBackground="@drawable/rect1"
+      android:shadowColor="@color/light_blue"
+      app:itemTextColor="@color/light_blue"
+      app:itemIconTint="@color/light_blue"
+      app:headerLayout="@layout/vavigation_header"
+      app:menu="@menu/menu_items"
+      android:layout_gravity="start"/>
+
+  </androidx.drawerlayout.widget.DrawerLayout>
+
+</layout>

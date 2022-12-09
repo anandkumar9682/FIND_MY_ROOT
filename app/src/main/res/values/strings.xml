@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">OM INFORMATICS</string>
+    <string name="nav_open">opne</string>
+    <string name="nav_close">close</string>
+    <string name="header_name">Employee </string>
+    <string name="playstoreurl">https://play.google.com/store/apps/details?id=com.asuni.csvfileviewer</string>
+</resources>

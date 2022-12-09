@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <color name="black">#000000</color>
+    <color name="dark_blue">#1F6BAC</color>
+    <color name="green">#89FF00</color>
+    <color name="light_blue">#399DF3</color>
+    <color name="pink">#FF28E9</color>
+    <color name="red">#FF0A0A</color>
+    <color name="white">#FFFFFF</color>
+    <string name="app_name">OM INFORMATICS</string>
+    <string name="header_name">Employee </string>
+    <string name="nav_close">close</string>
+    <string name="nav_open">opne</string>
+    <string name="playstoreurl">https://play.google.com/store/apps/details?id=com.asuni.csvfileviewer</string>
+    <style name="Theme.CSVViewer" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="colorPrimary">@color/dark_blue</item>
+        <item name="colorPrimaryVariant">@color/dark_blue</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <item name="colorSecondary">@color/light_blue</item>
+        <item name="colorSecondaryVariant">@color/light_blue</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+        <item name="android:statusBarColor" ns1:targetApi="l">?attr/colorPrimaryVariant</item>
+
+    </style>
+</resources>
