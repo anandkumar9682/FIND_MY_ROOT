@@ -6,7 +6,7 @@ import android.view.View;
 import androidx.databinding.DataBinderMapper;
 import androidx.databinding.DataBindingComponent;
 import androidx.databinding.ViewDataBinding;
-import com.asuni.assignment.databinding.ContactUsBindingImpl;
+import com.asuni.assignment.databinding.ActivityMapsBindingImpl;
 import com.asuni.assignment.databinding.HomeBindingImpl;
 import java.lang.IllegalArgumentException;
 import java.lang.Integer;
@@ -19,14 +19,14 @@ import java.util.HashMap;
 import java.util.List;
 
 public class DataBinderMapperImpl extends DataBinderMapper {
-  private static final int LAYOUT_CONTACTUS = 1;
+  private static final int LAYOUT_ACTIVITYMAPS = 1;
 
   private static final int LAYOUT_HOME = 2;
 
   private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(2);
 
   static {
-    INTERNAL_LAYOUT_ID_LOOKUP.put(com.asuni.assignment.R.layout.contact_us, LAYOUT_CONTACTUS);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.asuni.assignment.R.layout.activity_maps, LAYOUT_ACTIVITYMAPS);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.asuni.assignment.R.layout.home, LAYOUT_HOME);
   }
 
@@ -39,11 +39,11 @@ public class DataBinderMapperImpl extends DataBinderMapper {
         throw new RuntimeException("view must have a tag");
       }
       switch(localizedLayoutId) {
-        case  LAYOUT_CONTACTUS: {
-          if ("layout/contact_us_0".equals(tag)) {
-            return new ContactUsBindingImpl(component, view);
+        case  LAYOUT_ACTIVITYMAPS: {
+          if ("layout/activity_maps_0".equals(tag)) {
+            return new ActivityMapsBindingImpl(component, view);
           }
-          throw new IllegalArgumentException("The tag for contact_us is invalid. Received: " + tag);
+          throw new IllegalArgumentException("The tag for activity_maps is invalid. Received: " + tag);
         }
         case  LAYOUT_HOME: {
           if ("layout/home_0".equals(tag)) {
@@ -96,10 +96,9 @@ public class DataBinderMapperImpl extends DataBinderMapper {
   }
 
   private static class InnerBrLookup {
-    static final SparseArray<String> sKeys = new SparseArray<String>(2);
+    static final SparseArray<String> sKeys = new SparseArray<String>(1);
 
     static {
-      sKeys.put(1, "ViewModel");
       sKeys.put(0, "_all");
     }
   }
@@ -108,7 +107,7 @@ public class DataBinderMapperImpl extends DataBinderMapper {
     static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(2);
 
     static {
-      sKeys.put("layout/contact_us_0", com.asuni.assignment.R.layout.contact_us);
+      sKeys.put("layout/activity_maps_0", com.asuni.assignment.R.layout.activity_maps);
       sKeys.put("layout/home_0", com.asuni.assignment.R.layout.home);
     }
   }

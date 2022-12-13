@@ -14,31 +14,43 @@ public class HomeBindingImpl extends HomeBinding  {
     static {
         sIncludes = null;
         sViewsWithIds = new android.util.SparseIntArray();
-        sViewsWithIds.put(R.id.toolbar, 1);
-        sViewsWithIds.put(R.id.menu_btn, 2);
-        sViewsWithIds.put(R.id.ref, 3);
-        sViewsWithIds.put(R.id.recyclerView, 4);
-        sViewsWithIds.put(R.id.navigationView, 5);
+        sViewsWithIds.put(R.id.listLayout, 2);
+        sViewsWithIds.put(R.id.messageLayout, 3);
+        sViewsWithIds.put(R.id.loader, 4);
+        sViewsWithIds.put(R.id.mapToolBar1, 5);
+        sViewsWithIds.put(R.id.toolbar, 6);
+        sViewsWithIds.put(R.id.menu_btn, 7);
+        sViewsWithIds.put(R.id.headerTitle, 8);
+        sViewsWithIds.put(R.id.sortListBTN, 9);
     }
     // views
+    @NonNull
+    private final android.widget.RelativeLayout mboundView0;
+    @NonNull
+    private final android.widget.LinearLayout mboundView1;
     // variables
     // values
     // listeners
     // Inverse Binding Event Handlers
 
     public HomeBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 6, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 10, sIncludes, sViewsWithIds));
     }
     private HomeBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
-            , (androidx.drawerlayout.widget.DrawerLayout) bindings[0]
-            , (android.widget.ImageButton) bindings[2]
-            , (com.google.android.material.navigation.NavigationView) bindings[5]
-            , (androidx.recyclerview.widget.RecyclerView) bindings[4]
-            , (android.widget.ImageButton) bindings[3]
-            , (androidx.appcompat.widget.Toolbar) bindings[1]
+            , (android.widget.TextView) bindings[8]
+            , (android.view.View) bindings[2]
+            , (android.view.View) bindings[4]
+            , (android.widget.LinearLayout) bindings[5]
+            , (android.widget.ImageButton) bindings[7]
+            , (android.view.View) bindings[3]
+            , (android.widget.ImageButton) bindings[9]
+            , (androidx.appcompat.widget.Toolbar) bindings[6]
             );
-        this.drawer.setTag(null);
+        this.mboundView0 = (android.widget.RelativeLayout) bindings[0];
+        this.mboundView0.setTag(null);
+        this.mboundView1 = (android.widget.LinearLayout) bindings[1];
+        this.mboundView1.setTag(null);
         setRootTag(root);
         // listeners
         invalidateAll();

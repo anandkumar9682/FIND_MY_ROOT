@@ -5,46 +5,53 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.Toolbar;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
-import androidx.drawerlayout.widget.DrawerLayout;
-import androidx.recyclerview.widget.RecyclerView;
 import com.asuni.assignment.R;
-import com.google.android.material.navigation.NavigationView;
 import java.lang.Deprecated;
 import java.lang.Object;
 
 public abstract class HomeBinding extends ViewDataBinding {
   @NonNull
-  public final DrawerLayout drawer;
+  public final TextView headerTitle;
+
+  @NonNull
+  public final View listLayout;
+
+  @NonNull
+  public final View loader;
+
+  @NonNull
+  public final LinearLayout mapToolBar1;
 
   @NonNull
   public final ImageButton menuBtn;
 
   @NonNull
-  public final NavigationView navigationView;
+  public final View messageLayout;
 
   @NonNull
-  public final RecyclerView recyclerView;
-
-  @NonNull
-  public final ImageButton ref;
+  public final ImageButton sortListBTN;
 
   @NonNull
   public final Toolbar toolbar;
 
   protected HomeBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      DrawerLayout drawer, ImageButton menuBtn, NavigationView navigationView,
-      RecyclerView recyclerView, ImageButton ref, Toolbar toolbar) {
+      TextView headerTitle, View listLayout, View loader, LinearLayout mapToolBar1,
+      ImageButton menuBtn, View messageLayout, ImageButton sortListBTN, Toolbar toolbar) {
     super(_bindingComponent, _root, _localFieldCount);
-    this.drawer = drawer;
+    this.headerTitle = headerTitle;
+    this.listLayout = listLayout;
+    this.loader = loader;
+    this.mapToolBar1 = mapToolBar1;
     this.menuBtn = menuBtn;
-    this.navigationView = navigationView;
-    this.recyclerView = recyclerView;
-    this.ref = ref;
+    this.messageLayout = messageLayout;
+    this.sortListBTN = sortListBTN;
     this.toolbar = toolbar;
   }
 

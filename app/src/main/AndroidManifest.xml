@@ -3,15 +3,33 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.asuni.assignment">
 
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <permission android:name="com.eulerslab.ikshanaa.permission.MAPS_RECEIVE" />
+    <uses-feature android:name="android.hardware.location.gps" />
+    <uses-feature android:name="android.hardware.location" />
+
+
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/icon"
+        android:icon="@drawable/location"
         android:label="@string/app_name"
-        android:roundIcon="@drawable/icon"
+        android:roundIcon="@drawable/location"
         android:requestLegacyExternalStorage="true"
         android:theme="@style/Theme.CSVViewer">
+
+
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/api_kay" />
+
 
         <activity
             android:name="com.asuni.assignment.views.Home"
@@ -24,7 +42,7 @@
 
         </activity>
 
-        <activity android:name="com.asuni.assignment.views.ContactUS" />
+        <activity android:name="com.asuni.assignment.views.MapsActivity" />
 
     </application>
 

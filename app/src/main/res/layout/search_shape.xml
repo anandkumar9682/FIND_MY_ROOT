@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@null"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_marginBottom="10dp"
+        android:id="@+id/mapToolBar"
+        android:padding="20dp"
+        android:visibility="gone"
+        android:background="@color/gray_tr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_toLeftOf="@+id/saveBTN"
+            android:id="@+id/message"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/selected_place_location"
+            android:textColor="@color/white"
+            android:textSize="17dp"
+            android:textAlignment="center"
+            android:layout_centerVertical="true"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:layout_alignParentRight="true"
+            android:id="@+id/saveBTN"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Save"
+            android:layout_marginLeft="10dp"
+            android:paddingHorizontal="1dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:background="@drawable/btn_shape"/>
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/search_shape">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="Result"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <ListView
+            android:layout_gravity="center"
+            android:background="@drawable/rect1"
+            android:id="@+id/searchResultList"
+            android:visibility="gone"
+            android:paddingHorizontal="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="120dp" />
+
+        <View
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/dark_blue"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="Search Place"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/searchEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:layout_toLeftOf="@+id/searchProgress"
+                android:background="@drawable/edit_text_share"
+                android:foregroundTint="@color/gray"
+                android:hint="Enter place name"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="5dp"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <ProgressBar
+                android:visibility="gone"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:id="@+id/searchProgress"
+                android:layout_width="30dp"
+                android:indeterminateTint="@color/dark_blue"
+                android:layout_height="wrap_content"/>
+
+
+
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+</LinearLayout>

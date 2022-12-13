@@ -1,17 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="http://schemas.android.com/tools">
     <color name="black">#000000</color>
-    <color name="dark_blue">#1F6BAC</color>
-    <color name="green">#89FF00</color>
-    <color name="light_blue">#399DF3</color>
-    <color name="pink">#FF28E9</color>
-    <color name="red">#FF0A0A</color>
+    <color name="black_tr">#A8000000</color>
+    <color name="dark_blue">#DD557D</color>
+    <color name="gray">#888787</color>
+    <color name="gray_dark">#E1CFCF</color>
+    <color name="gray_tr">#6F302D2B</color>
+    <color name="light_blue">#EC4978</color>
+    <color name="light_gray">#ECE1DA</color>
+    <color name="tra">#00FFFFFF</color>
     <color name="white">#FFFFFF</color>
-    <string name="app_name">OM INFORMATICS</string>
-    <string name="header_name">Employee </string>
+    <string name="add_poi">Add POI</string>
+    <string name="api_kay">AIzaSyBSNyp6GQnnKlrMr7hD2HGiyF365tFlK5U</string>
+    <string name="app_name">Location Source</string>
+    <string name="delete_saved_place">Delete saved place</string>
     <string name="nav_close">close</string>
     <string name="nav_open">opne</string>
+    <string name="no_place_mesage">No place available. \n Lets start by adding few places</string>
     <string name="playstoreurl">https://play.google.com/store/apps/details?id=com.asuni.csvfileviewer</string>
+    <string name="routing">Routing</string>
+    <string name="search_place">Search Place</string>
+    <string name="selected_place_location">Do you want to save this selected location</string>
     <style name="Theme.CSVViewer" parent="Theme.AppCompat.Light.NoActionBar">
 
         <item name="colorPrimary">@color/dark_blue</item>

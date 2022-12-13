@@ -1,7 +1,14 @@
 <resources>
-    <string name="app_name">OM INFORMATICS</string>
+    <string name="app_name">Location Source</string>
     <string name="nav_open">opne</string>
     <string name="nav_close">close</string>
-    <string name="header_name">Employee </string>
+    <string name="search_place">Search Place</string>
+    <string name="routing">Routing</string>
+
+    <string name="no_place_mesage">No place available. \n Lets start by adding few places</string>
+    <string name="selected_place_location">Do you want to save this selected location</string>
     <string name="playstoreurl">https://play.google.com/store/apps/details?id=com.asuni.csvfileviewer</string>
+    <string name="delete_saved_place">Delete saved place</string>
+    <string name="add_poi">Add POI</string>
+
 </resources>

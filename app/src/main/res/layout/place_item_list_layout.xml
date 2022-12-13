@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:scrollbars="vertical"
+        android:layout_above="@+id/abc"
+        android:layout_height="match_parent"/>
+
+    <RelativeLayout
+        android:id="@+id/abc"
+        android:layout_marginBottom="5dp"
+        android:paddingHorizontal="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/addPOI"
+            android:layout_toLeftOf="@+id/getDirectionBTN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/btn_shape"
+            android:text="Add POI"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/getDirectionBTN"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_direction"
+            android:background="@drawable/radio_btn_shape"
+            android:scaleType="fitXY"
+            android:padding="5dp" />
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

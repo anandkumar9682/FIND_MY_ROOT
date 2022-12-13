@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:padding="20dp"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/ref"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/location" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/delete_saved_place"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="are you sure you want to delete this place details from your saved list?"
+        android:textColor="@color/black"
+        android:textSize="17dp"/>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/yes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_shape"
+            android:paddingHorizontal="40dp"
+            android:text="ok"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_marginLeft="20dp"
+            android:id="@+id/no"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="cancel"
+            android:paddingHorizontal="40dp"
+            android:textColor="@color/dark_blue"
+            android:textStyle="bold"
+            android:background="@drawable/rect_shape"/>
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:padding="20dp"
+    android:background="@drawable/search_shape"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sort By"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_marginLeft="10dp"
+            android:id="@+id/closePopup"
+            android:layout_alignParentRight="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_close"/>
+
+
+
+    </RelativeLayout>
+
+
+
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="are you sure you want to delete this place details from your saved list?"
+        android:textColor="@color/black"
+        android:textSize="17dp"/>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioGroup
+            android:id="@+id/sortRadioBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/ascending"
+                android:text="Sort distance in ascending order"
+                android:layout_width="match_parent"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:checked="true"
+                android:layout_height="wrap_content"/>
+
+            <RadioButton
+                android:id="@+id/descending"
+                android:text="Sort distance in descending order"
+                android:layout_width="match_parent"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"/>
+
+
+        </RadioGroup>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
