@@ -66,7 +66,6 @@ public class Home extends AppCompatActivity {
 
     ((TextView) findViewById(R.id.headerTitle) ).setText( getApplicationContext().getString (R.string.app_name ));
 
-
     findViewById(R.id.menu_btn).setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View view) {
@@ -81,19 +80,19 @@ public class Home extends AppCompatActivity {
       }
     });
 
-    findViewById(R.id.addPOI).setOnClickListener(new View.OnClickListener() {
-      @Override
-      public void onClick(View view) {
-        changeLayout( null );
-      }
-    });
 
-    findViewById(R.id.addPOI1).setOnClickListener(new View.OnClickListener() {
+
+    View.OnClickListener view = new View.OnClickListener() {
       @Override
       public void onClick(View view) {
         changeLayout( null );
       }
-    });
+    };
+
+    findViewById(R.id.addPOI).setOnClickListener( view );
+    findViewById(R.id.addPOI1).setOnClickListener( view );
+
+
 
     findViewById(R.id.getDirectionBTN).setOnClickListener(new View.OnClickListener() {
       @Override
@@ -111,12 +110,8 @@ public class Home extends AppCompatActivity {
 
         loader.setVisibility(View.GONE);
 
-
-
       }
     });
-
-
 
     RecyclerView recyclerView = findViewById(R.id.recyclerView);
     recyclerView.setLayoutManager(new LinearLayoutManager(this));
@@ -228,7 +223,6 @@ public class Home extends AppCompatActivity {
 
   }
 
-
   public  void layout( boolean flag ){
     if( flag ){
       findViewById(R.id.listLayout).setVisibility(View.VISIBLE);
@@ -237,9 +231,7 @@ public class Home extends AppCompatActivity {
       findViewById(R.id.messageLayout).setVisibility(View.VISIBLE);
       findViewById(R.id.listLayout).setVisibility(View.GONE);
     }
-
   }
-
 
   public  void fetchList(){
 
@@ -287,18 +279,9 @@ public class Home extends AppCompatActivity {
         }
       });
 
-
-
     }
 
-
-
-
-
   }
-
-
-
 
   @SuppressLint("MissingInflatedId")
   public void sortList() {

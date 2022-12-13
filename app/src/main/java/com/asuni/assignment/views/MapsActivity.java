@@ -112,7 +112,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
         map.addMarker(new MarkerOptions().position(sydney).title( address.getAddressLine(0) ).visible(true) );
 
-        map.animateCamera(CameraUpdateFactory.zoomTo(20));
+        map.animateCamera(CameraUpdateFactory.zoomTo(12));
 
         CameraUpdate center = CameraUpdateFactory.newLatLng( sydney );
 
@@ -132,7 +132,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
         map.addMarker(new MarkerOptions().position(sydney).title( locModel1.getAddress() ).visible(true) );
 
-        map.animateCamera(CameraUpdateFactory.zoomTo(20));
+        map.animateCamera(CameraUpdateFactory.zoomTo(12));
 
         CameraUpdate center = CameraUpdateFactory.newLatLng( sydney );
 
@@ -148,10 +148,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
         geocoder = new Geocoder( getApplicationContext() );
 
-        LatLng sydney = new LatLng(28.679079, 77.391029);
+        LatLng sydney = new LatLng(28.644800, 77.216721);
         map.animateCamera( CameraUpdateFactory.newLatLng( sydney ) );
-        map.animateCamera(CameraUpdateFactory.zoomTo(10));
-
+        map.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney, 12));
 
         boolean b = getIntent().getBooleanExtra("flag",false);
 
@@ -159,8 +158,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             drawMarker();
         else
             searchList();
-
-        LatLng center = mMap.getCameraPosition().target;
 
         mMap.setOnCameraIdleListener(new GoogleMap.OnCameraIdleListener() {
             @Override
@@ -429,7 +426,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         if( !list.isEmpty()) {
             int mid = (int) list.size() / 2;
             LatLng fullRoutFor = new LatLng(Double.parseDouble(list.get(mid).getLat()), Double.parseDouble(list.get(mid).getLog()));
-            map.moveCamera(CameraUpdateFactory.newLatLngZoom(fullRoutFor, 5));
+            map.moveCamera(CameraUpdateFactory.newLatLngZoom(fullRoutFor, 12));
         }
 
         map.getUiSettings().setZoomControlsEnabled(true);

@@ -16,7 +16,7 @@ public class ViewModal extends AndroidViewModel {
 
     private LocRepository repository;
 
-    private LiveData<List<LocModel>> allCourses;
+    private LiveData<List<LocModel>> allLocs;
 
     Application application;
 
@@ -27,7 +27,7 @@ public class ViewModal extends AndroidViewModel {
         this.application = application;
 
         repository = new LocRepository(application);
-        allCourses = repository.getAllLocsAsc();
+        allLocs = repository.getAllLocsAsc();
 
     }
 
@@ -49,17 +49,17 @@ public class ViewModal extends AndroidViewModel {
     }
 
     public LiveData<List<LocModel>> getAllLocsAsc() {
-        allCourses = repository.getAllLocsAsc();
-        return allCourses;
+        allLocs = repository.getAllLocsAsc();
+        return allLocs;
     }
     public LiveData<List<LocModel>> getAllLocsDesc() {
-        allCourses = repository.getAllLocsDesc();
-        return allCourses;
+        allLocs = repository.getAllLocsDesc();
+        return allLocs;
     }
 
     public LiveData<List<LocModel>> getAllLocsByPriority() {
-        allCourses = repository.getAllLocsByPriority();
-        return allCourses;
+        allLocs = repository.getAllLocsByPriority();
+        return allLocs;
     }
 
 

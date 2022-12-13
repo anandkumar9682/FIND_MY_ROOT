@@ -1,22 +1,13 @@
 package com.asuni.assignment.adapters;
 
 import android.annotation.SuppressLint;
-import android.app.AlertDialog;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.os.Build;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.ImageButton;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
-
 import androidx.annotation.NonNull;
-import androidx.annotation.RequiresApi;
 import androidx.recyclerview.widget.DiffUtil;
 import androidx.recyclerview.widget.ListAdapter;
 import androidx.recyclerview.widget.RecyclerView;
@@ -25,12 +16,10 @@ import com.asuni.assignment.R;
 import com.asuni.assignment.db.entity.LocModel;
 import com.asuni.assignment.views.Home;
 
-
 public class LocRVAdapter extends ListAdapter<LocModel, LocRVAdapter.ViewHolder> {
 
     private OnItemClickListener listener;
     Home mainActivity;
-
 
     private static final DiffUtil.ItemCallback<LocModel> DIFF_CALLBACK = new DiffUtil.ItemCallback<LocModel>() {
         @Override
@@ -78,15 +67,12 @@ public class LocRVAdapter extends ListAdapter<LocModel, LocRVAdapter.ViewHolder>
                 holder.prioriry.setVisibility(View.VISIBLE);
 
             } else {
-
                 holder.prioriry.setVisibility(View.GONE);
-
             }
-
 
             holder.address.setText( String.valueOf( model.getAddress() ) );
 
-            holder.distance.setText( "Distance : "+model.getDistance()+"-KM" );
+            holder.distance.setText( "Distance : "+model.getDistance()+" -KM" );
 
             holder.editBTN.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -103,9 +89,7 @@ public class LocRVAdapter extends ListAdapter<LocModel, LocRVAdapter.ViewHolder>
             });
 
 
-        } catch (Exception e) {
-            System.out.println("create job view ex:" + e);
-        }
+        } catch (Exception e) {  }
 
     }
 

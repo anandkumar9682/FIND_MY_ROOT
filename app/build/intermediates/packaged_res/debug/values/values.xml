@@ -4,10 +4,10 @@
     <color name="black_tr">#A8000000</color>
     <color name="dark_blue">#DD557D</color>
     <color name="gray">#888787</color>
-    <color name="gray_dark">#E1CFCF</color>
+    <color name="gray_dark">#C1AEAE</color>
     <color name="gray_tr">#6F302D2B</color>
     <color name="light_blue">#EC4978</color>
-    <color name="light_gray">#ECE1DA</color>
+    <color name="light_gray">#EDAE86</color>
     <color name="tra">#00FFFFFF</color>
     <color name="white">#FFFFFF</color>
     <string name="add_poi">Add POI</string>

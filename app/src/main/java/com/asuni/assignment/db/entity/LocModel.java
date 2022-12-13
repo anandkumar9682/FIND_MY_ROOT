@@ -22,6 +22,7 @@ public class LocModel implements Serializable {
     private double distance;
 
     private String lat;
+
     private String log;
 
 

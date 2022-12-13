@@ -6,9 +6,11 @@
                 {
                     "source": "C:\\Users\\LAV RAJPUT\\StudioProjects\\New_Application\\app\\src\\main\\res\\values\\colors.xml",
                     "from": {
-                        "startLines": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
-                        "startColumns": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
-                        "startOffsets": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"
+                        "startLines": "-1,-1,-1,-1,11,-1,-1,10,-1,-1",
+                        "startColumns": "-1,-1,-1,-1,4,-1,-1,4,-1,-1",
+                        "startOffsets": "-1,-1,-1,-1,284,-1,-1,238,-1,-1",
+                        "endColumns": "-1,-1,-1,-1,43,-1,-1,44,-1,-1",
+                        "endOffsets": "-1,-1,-1,-1,323,-1,-1,278,-1,-1"
                     },
                     "to": {
                         "startLines": "586,587,608,652,653,654,657,658,832,833",
@@ -36,11 +38,9 @@
                 {
                     "source": "C:\\Users\\LAV RAJPUT\\StudioProjects\\New_Application\\app\\src\\main\\res\\values\\strings.xml",
                     "from": {
-                        "startLines": "-1,-1,-1,-1,-1,-1,-1,-1,4,-1",
-                        "startColumns": "-1,-1,-1,-1,-1,-1,-1,-1,4,-1",
-                        "startOffsets": "-1,-1,-1,-1,-1,-1,-1,-1,159,-1",
-                        "endColumns": "-1,-1,-1,-1,-1,-1,-1,-1,53,-1",
-                        "endOffsets": "-1,-1,-1,-1,-1,-1,-1,-1,208,-1"
+                        "startLines": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startColumns": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startOffsets": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"
                     },
                     "to": {
                         "startLines": "1609,1612,1639,1728,1729,1730,1736,1737,1739,1740",
