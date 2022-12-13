@@ -112,7 +112,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_toLeftOf="@+id/searchProgress"
                 android:background="@drawable/edit_text_share"
-                android:foregroundTint="@color/gray"
+                android:foregroundTint="@color/white"
                 android:hint="Enter place name"
                 android:paddingHorizontal="10dp"
                 android:paddingVertical="5dp"

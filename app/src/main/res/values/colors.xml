@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <color name="dark_blue">#DD557D</color>
-    <color name="light_blue">#EC4978</color>
+    <color name="dark_blue">#EB4576</color>
 
     <color name="black">#000000</color>
     <color name="white">#FFFFFF</color>
 
 
-    <color name="light_gray">#EDAE86</color>
+    <color name="toolbar">#DAB196</color>
+
+
     <color name="gray_dark">#C1AEAE</color>
     <color name="gray">#888787</color>
 
     <color name="gray_tr">#6F302D2B</color>
-    <color name="tra">#00FFFFFF</color>
     <color name="black_tr">#A8000000</color>
 
 

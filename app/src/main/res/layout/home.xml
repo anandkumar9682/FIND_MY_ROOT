@@ -14,18 +14,18 @@
 
 
     <LinearLayout
+        android:background="@color/toolbar"
         android:id="@+id/mapToolBar1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
       <com.google.android.material.appbar.AppBarLayout
-          android:background="@color/white"
           android:layout_width="match_parent"
           android:layout_height="50dp">
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
-            android:background="@color/light_gray"
+            android:background="@color/toolbar"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:minHeight="?attr/actionBarSize">
@@ -61,7 +61,7 @@
                 android:layout_height="30dp"
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
-                android:background="@drawable/location_sort"
+                android:background="@drawable/ic_baseline_sort_by_alpha_24"
                 android:padding="5dp" />
 
           </RelativeLayout>

@@ -93,22 +93,20 @@ public class Home extends AppCompatActivity {
     findViewById(R.id.addPOI1).setOnClickListener( view );
 
 
-
     findViewById(R.id.getDirectionBTN).setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View view) {
 
-        loader.setVisibility(View.VISIBLE);
-
         new Handler().postDelayed(new Runnable() {
           @Override
           public void run() {
-            changeLayout1(  );
-
+            loader.setVisibility(View.VISIBLE);
           }
         },0);
 
-        loader.setVisibility(View.GONE);
+        changeLayout1(  );
+
+
 
       }
     });
@@ -176,7 +174,7 @@ public class Home extends AppCompatActivity {
   public void changeLayout1(  ){
     Intent intent = new Intent(getApplicationContext(),MapsActivity.class);
     intent.putExtra( "flag" , true );
-    startActivity( intent );
+    startActivityForResult( intent , 1);
   }
 
   public void deletePopup(int i) {
@@ -246,6 +244,7 @@ public class Home extends AppCompatActivity {
           else
             findViewById(R.id.getDirectionBTN).setVisibility(View.GONE);
 
+          loader.setVisibility(View.GONE);
           adapter.submitList(models);
 
           if( adapter.getItemCount() == 0 ){
@@ -267,6 +266,8 @@ public class Home extends AppCompatActivity {
             findViewById(R.id.getDirectionBTN).setVisibility(View.VISIBLE);
           else
             findViewById(R.id.getDirectionBTN).setVisibility(View.GONE);
+
+          loader.setVisibility(View.GONE);
 
           adapter.submitList(models);
 

@@ -6,14 +6,13 @@ color dark_blue
 color gray
 color gray_dark
 color gray_tr
-color light_blue
-color light_gray
-color tra
+color toolbar
 color white
 drawable btn_shape
 drawable button_shape
 drawable edit_text_share
 drawable ic_back_arrow
+drawable ic_baseline_sort_by_alpha_24
 drawable ic_close
 drawable ic_delete
 drawable ic_direction
