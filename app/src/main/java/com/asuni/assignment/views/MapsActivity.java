@@ -17,6 +17,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
@@ -24,7 +25,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.fragment.app.FragmentActivity;
-import androidx.lifecycle.Observer;
+
 import androidx.lifecycle.ViewModelProviders;
 
 import com.asuni.assignment.R;
@@ -35,17 +36,16 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
-import com.google.android.gms.maps.model.Dash;
-import com.google.android.gms.maps.model.Gap;
+
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
-import com.google.android.gms.maps.model.PatternItem;
+
 import com.google.android.gms.maps.model.PolylineOptions;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.maps.DirectionsApi;
 import com.google.maps.DirectionsApiRequest;
 import com.google.maps.GeoApiContext;
-import com.google.maps.android.SphericalUtil;
+
 import com.google.maps.model.DirectionsLeg;
 import com.google.maps.model.DirectionsResult;
 import com.google.maps.model.DirectionsRoute;
@@ -54,7 +54,7 @@ import com.google.maps.model.EncodedPolyline;
 
 import java.text.DecimalFormat;
 import java.util.ArrayList;
-import java.util.Arrays;
+
 import java.util.List;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
@@ -63,7 +63,11 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private Geocoder geocoder;
 
     EditText searchEditText;
+
     ListView searchResultList;
+
+    LinearLayout resultLayout;
+
     ProgressBar searchProgress;
 
     public Address currentSelect;
@@ -83,7 +87,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         setContentView(R.layout.activity_maps);
 
         locModel1 = (LocModel) getIntent().getSerializableExtra("model");
-
 
         viewmodal = ViewModelProviders.of( this ).get( ViewModal.class );
 
@@ -238,9 +241,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             });
 
             if( b ){
-                searchResultList.setVisibility(View.VISIBLE);
+                resultLayout.setVisibility(View.VISIBLE);
             }else
-                searchResultList.setVisibility(View.GONE);
+                resultLayout.setVisibility(View.GONE);
 
             new Handler().postDelayed(new Runnable() {
                 @Override
@@ -270,6 +273,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         this.searchEditText = (customSnackView.findViewById(R.id.searchEditText));
         this.searchProgress = (customSnackView.findViewById(R.id.searchProgress));
         this.mapToolBar = (customSnackView.findViewById(R.id.mapToolBar));
+        this.resultLayout = customSnackView.findViewById(R.id.resultLayout);
 
 
         if( locModel1 != null ){
@@ -289,7 +293,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 if( cs.toString().trim().equals("")){
 
                     searchProgress.setVisibility(View.GONE);
-                    searchResultList.setVisibility(View.GONE);
+                    resultLayout.setVisibility(View.GONE);
 
                 } else{
                     searchProgress.setVisibility(View.VISIBLE);
@@ -356,7 +360,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                     viewmodal.insert( locModel );
 
 
-                Toast.makeText(getApplicationContext() , "Place Locaiton Saved.",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext() , "Location data saved.",Toast.LENGTH_SHORT).show();
 
                 finish();
 
@@ -497,7 +501,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 }
             }
         } catch(Exception ex) {
-            Toast.makeText(getApplicationContext(), ex.toString() , Toast.LENGTH_SHORT).show();
+
         }
 
         if (path.size() > 0) {

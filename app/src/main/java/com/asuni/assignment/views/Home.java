@@ -99,17 +99,19 @@ public class Home extends AppCompatActivity {
       @Override
       public void onClick(View view) {
 
+        loader.setVisibility(View.VISIBLE);
+
         new Handler().postDelayed(new Runnable() {
           @Override
           public void run() {
-            loader.setVisibility(View.VISIBLE);
+            changeLayout1(  );
+
           }
         },0);
 
-
-        changeLayout1(  );
-
         loader.setVisibility(View.GONE);
+
+
 
       }
     });
@@ -165,7 +167,6 @@ public class Home extends AppCompatActivity {
   protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
     super.onActivityResult(requestCode, resultCode, data);
 
-
     loader.setVisibility(View.VISIBLE);
     new Handler().postDelayed(new Runnable() {
       @Override
@@ -184,8 +185,6 @@ public class Home extends AppCompatActivity {
   }
 
   public void deletePopup(int i) {
-
-    System.out.println("dddddddddddddddd "+i );
 
     AlertDialog.Builder builder1 = new AlertDialog.Builder( Home.this );
     ViewGroup viewGroup = findViewById(android.R.id.content);

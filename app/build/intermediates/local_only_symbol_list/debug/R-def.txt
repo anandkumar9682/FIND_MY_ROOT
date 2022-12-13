@@ -54,6 +54,7 @@ id no
 id priority
 id recyclerView
 id ref
+id resultLayout
 id saveBTN
 id searchEditText
 id searchProgress

@@ -44,9 +44,7 @@
             android:textStyle="bold"
             android:background="@drawable/btn_shape"/>
 
-
     </RelativeLayout>
-
 
     <LinearLayout
         android:orientation="vertical"
@@ -56,30 +54,40 @@
         android:layout_height="wrap_content"
         android:background="@drawable/search_shape">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:gravity="center"
-            android:text="Result"
-            android:textColor="@color/black"
-            android:textSize="20dp"
-            android:textStyle="bold" />
-
-        <ListView
-            android:layout_gravity="center"
-            android:background="@drawable/rect1"
-            android:id="@+id/searchResultList"
+        <LinearLayout
             android:visibility="gone"
-            android:paddingHorizontal="5dp"
+            android:id="@+id/resultLayout"
+            android:orientation="vertical"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="10dp"
             android:layout_width="match_parent"
-            android:layout_height="120dp" />
+            android:layout_height="wrap_content">
 
-        <View
-            android:layout_marginTop="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/dark_blue"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="Result"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <ListView
+                android:layout_gravity="center"
+                android:background="@drawable/rect1"
+                android:id="@+id/searchResultList"
+                android:paddingHorizontal="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="120dp" />
+
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/dark_blue"/>
+
+        </LinearLayout>
 
         <TextView
             android:layout_width="wrap_content"
@@ -121,12 +129,8 @@
                 android:indeterminateTint="@color/dark_blue"
                 android:layout_height="wrap_content"/>
 
-
-
         </RelativeLayout>
 
-
-
-
     </LinearLayout>
+
 </LinearLayout>
