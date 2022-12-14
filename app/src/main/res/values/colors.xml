@@ -1,19 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <color name="dark_blue">#EB4576</color>
+    <color name="primary">#EB4576</color>
+
+    <color name="status_bar">#D53F69</color>
+
+    <color name="toolbar">#62ABAE</color>
 
     <color name="black">#000000</color>
+
+    <color name="primary_text_color">#000000</color>
+
+    <color name="primary_background_color">#ACB1BD</color>
+
+
+    <color name="secondary_text_color">#000000</color>
+
+    <color name="secondary_background_color">#F2F4F8</color>
+
+    <color name="hint_text">#888787</color>
+
+    <color name="importance">#888787</color>
+
     <color name="white">#FFFFFF</color>
 
 
-    <color name="toolbar">#DAB196</color>
-
-
     <color name="gray_dark">#C1AEAE</color>
+
     <color name="gray">#888787</color>
 
     <color name="gray_tr">#6F302D2B</color>
+
     <color name="black_tr">#A8000000</color>
 
 

@@ -5,6 +5,7 @@
     android:layout_height="match_parent"
     android:layout_gravity="center"
     android:gravity="center"
+    android:background="@color/primary_background_color"
     android:orientation="vertical">
 
     <ImageButton
@@ -19,7 +20,7 @@
         android:layout_centerHorizontal="true"
         android:gravity="center"
         android:text="@string/no_place_mesage"
-        android:textColor="@color/black"
+        android:textColor="@color/secondary_text_color"
         android:textSize="20dp"
         android:textStyle="bold" />
 
@@ -31,7 +32,7 @@
         android:layout_height="wrap_content"
         android:text="@string/add_poi"
         android:paddingHorizontal="40dp"
-        android:textColor="@color/dark_blue"
+        android:textColor="@color/primary"
         android:textStyle="bold"
         android:textAllCaps="false"
         android:background="@drawable/rect_shape"/>

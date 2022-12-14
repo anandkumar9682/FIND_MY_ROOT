@@ -1,7 +1,7 @@
 package com.asuni.assignment.views;
 
 import android.annotation.SuppressLint;
-import android.app.Activity;
+
 import android.app.AlertDialog;
 import android.content.Intent;
 
@@ -14,7 +14,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.LinearLayout;
-import android.widget.RadioButton;
+
 import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;

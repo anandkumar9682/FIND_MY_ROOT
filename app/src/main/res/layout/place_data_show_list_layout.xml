@@ -7,6 +7,7 @@
     app:contentPadding="10dp"
     app:cardCornerRadius="10dp"
     app:cardMaxElevation="12dp"
+    app:cardBackgroundColor="@color/secondary_background_color"
     app:cardPreventCornerOverlap="true">
 
 
@@ -28,7 +29,7 @@
           android:id="@+id/name"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:textColor="@color/black"
+          android:textColor="@color/primary_text_color"
           android:textSize="16sp"
           android:textStyle="bold" />
 
@@ -38,7 +39,7 @@
           android:id="@+id/priority"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:textColor="@color/white"
+          android:textColor="@color/secondary_text_color"
           android:textSize="12sp"
           android:text="primary"
           android:visibility="gone"
@@ -70,7 +71,7 @@
         android:id="@+id/address"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/gray"
+        android:textColor="@color/importance"
         android:textSize="16sp"
         android:layout_marginTop="5dp"
         android:textStyle="bold" />
@@ -79,7 +80,7 @@
         android:id="@+id/distance"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/gray"
+        android:textColor="@color/importance"
         android:textSize="16sp"
         android:layout_marginTop="5dp"
         android:textStyle="bold" />

@@ -19,7 +19,7 @@
             android:layout_height="wrap_content"
             android:text="Sort By"
             android:textAllCaps="true"
-            android:textColor="@color/black"
+            android:textColor="@color/primary_text_color"
             android:textSize="20dp"
             android:textStyle="bold" />
 
@@ -30,8 +30,6 @@
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:background="@drawable/ic_close"/>
-
-
 
     </RelativeLayout>
 
@@ -45,7 +43,7 @@
         android:layout_centerHorizontal="true"
         android:gravity="center"
         android:text="are you sure you want to delete this place details from your saved list?"
-        android:textColor="@color/black"
+        android:textColor="@color/primary_text_color"
         android:textSize="17dp"/>
 
     <LinearLayout
@@ -66,7 +64,7 @@
                 android:text="Sort distance in ascending order"
                 android:layout_width="match_parent"
                 android:textStyle="bold"
-                android:textColor="@color/black"
+                android:textColor="@color/primary_text_color"
                 android:checked="true"
                 android:layout_height="wrap_content"/>
 
@@ -75,7 +73,7 @@
                 android:text="Sort distance in descending order"
                 android:layout_width="match_parent"
                 android:textStyle="bold"
-                android:textColor="@color/black"
+                android:textColor="@color/primary_text_color"
                 android:layout_height="wrap_content"/>
 
 

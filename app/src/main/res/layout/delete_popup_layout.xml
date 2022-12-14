@@ -20,7 +20,7 @@
         android:layout_centerHorizontal="true"
         android:gravity="center"
         android:text="@string/delete_saved_place"
-        android:textColor="@color/black"
+        android:textColor="@color/secondary_text_color"
         android:textSize="20dp"
         android:textStyle="bold" />
 
@@ -31,7 +31,7 @@
         android:layout_centerHorizontal="true"
         android:gravity="center"
         android:text="are you sure you want to delete this place details from your saved list?"
-        android:textColor="@color/black"
+        android:textColor="@color/secondary_text_color"
         android:textSize="17dp"/>
 
     <LinearLayout
@@ -61,7 +61,7 @@
             android:layout_height="wrap_content"
             android:text="cancel"
             android:paddingHorizontal="40dp"
-            android:textColor="@color/dark_blue"
+            android:textColor="@color/primary"
             android:textStyle="bold"
             android:background="@drawable/rect_shape"/>
 
