@@ -36,7 +36,6 @@
         android:label="@string/app_name"
         android:requestLegacyExternalStorage="true"
         android:roundIcon="@drawable/location"
-        android:testOnly="true"
         android:theme="@style/Theme.CSVViewer" >
         <meta-data
             android:name="com.google.android.geo.API_KEY"

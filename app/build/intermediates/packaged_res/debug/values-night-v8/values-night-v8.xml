@@ -2,23 +2,22 @@
 <resources xmlns:ns1="http://schemas.android.com/tools">
     <color name="black">#000000</color>
     <color name="black_tr">#A8000000</color>
-    <color name="dark_blue">#EB4576</color>
     <color name="gray">#888787</color>
     <color name="gray_dark">#C1AEAE</color>
     <color name="gray_tr">#6F302D2B</color>
-    <color name="toolbar">#DAB196</color>
+    <color name="hint_text">#DBD8D8</color>
+    <color name="importance">#888787</color>
+    <color name="primary">#EB4576</color>
+    <color name="primary_background_color">#243150</color>
+    <color name="primary_text_color">#FFFFFF</color>
+    <color name="secondary_background_color">#2F3F65</color>
+    <color name="secondary_text_color">#000000</color>
+    <color name="status_bar">#2E191F</color>
+    <color name="toolbar">#152E4C</color>
     <color name="white">#FFFFFF</color>
     <style name="Theme.CSVViewer" parent="Theme.AppCompat.Light.NoActionBar">
 
-        <item name="colorPrimary">@color/dark_blue</item>
-        <item name="colorPrimaryVariant">@color/dark_blue</item>
-        <item name="colorOnPrimary">@color/white</item>
-
-        <item name="colorSecondary">@color/gray_dark</item>
-        <item name="colorSecondaryVariant">@color/gray_dark</item>
-        <item name="colorOnSecondary">@color/black</item>
-
-        <item name="android:statusBarColor" ns1:targetApi="l">?attr/colorSecondary</item>
+        <item name="android:statusBarColor" ns1:targetApi="l">@color/status_bar</item>
 
     </style>
 </resources>

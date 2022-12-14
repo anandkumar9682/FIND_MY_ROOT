@@ -2,6 +2,7 @@ package com.asuni.assignment.views;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.res.Configuration;
 import android.graphics.Color;
 import android.location.Address;
 import android.location.Geocoder;
@@ -38,6 +39,7 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MapStyleOptions;
 import com.google.android.gms.maps.model.MarkerOptions;
 
 import com.google.android.gms.maps.model.PolylineOptions;
@@ -151,6 +153,14 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         LatLng sydney = new LatLng(28.644800, 77.216721);
         map.animateCamera( CameraUpdateFactory.newLatLng( sydney ) );
         map.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney, 12));
+
+
+
+        int nightModeFlags = getApplicationContext().getResources().getConfiguration().uiMode & Configuration.UI_MODE_NIGHT_MASK;
+
+        if( nightModeFlags == Configuration.UI_MODE_NIGHT_YES)
+            map.setMapStyle(MapStyleOptions.loadRawResourceStyle(this, R.raw.map_in_night));
+
 
         boolean b = getIntent().getBooleanExtra("flag",false);
 
