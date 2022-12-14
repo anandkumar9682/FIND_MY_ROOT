@@ -12,12 +12,12 @@
         "source": "C:\\Users\\LAV RAJPUT\\StudioProjects\\New_Application\\app\\src\\main\\res\\drawable\\ic_close.xml"
     },
     {
-        "merged": "C:\\Users\\LAV RAJPUT\\StudioProjects\\New_Application\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_maps.xml.flat",
-        "source": "C:\\Users\\LAV RAJPUT\\StudioProjects\\New_Application\\app\\src\\main\\res\\layout\\activity_maps.xml"
-    },
-    {
         "merged": "C:\\Users\\LAV RAJPUT\\StudioProjects\\New_Application\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_sort_by_alpha_24.xml.flat",
         "source": "C:\\Users\\LAV RAJPUT\\StudioProjects\\New_Application\\app\\src\\main\\res\\drawable\\ic_baseline_sort_by_alpha_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\LAV RAJPUT\\StudioProjects\\New_Application\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_maps.xml.flat",
+        "source": "C:\\Users\\LAV RAJPUT\\StudioProjects\\New_Application\\app\\src\\main\\res\\layout\\activity_maps.xml"
     },
     {
         "merged": "C:\\Users\\LAV RAJPUT\\StudioProjects\\New_Application\\app\\build\\intermediates\\merged_res\\debug\\drawable_button_shape.xml.flat",
@@ -62,6 +62,10 @@
     {
         "merged": "C:\\Users\\LAV RAJPUT\\StudioProjects\\New_Application\\app\\build\\intermediates\\merged_res\\debug\\layout_sorting_list_layout.xml.flat",
         "source": "C:\\Users\\LAV RAJPUT\\StudioProjects\\New_Application\\app\\src\\main\\res\\layout\\sorting_list_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\LAV RAJPUT\\StudioProjects\\New_Application\\app\\build\\intermediates\\merged_res\\debug\\raw_map_in_night.json.flat",
+        "source": "C:\\Users\\LAV RAJPUT\\StudioProjects\\New_Application\\app\\src\\main\\res\\raw\\map_in_night.json"
     },
     {
         "merged": "C:\\Users\\LAV RAJPUT\\StudioProjects\\New_Application\\app\\build\\intermediates\\merged_res\\debug\\drawable_rect1.xml.flat",
