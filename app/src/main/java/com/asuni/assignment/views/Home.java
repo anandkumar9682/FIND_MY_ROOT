@@ -104,7 +104,17 @@ public class Home extends AppCompatActivity {
           }
         },0);
 
+
         changeLayout1(  );
+
+        new Handler().postDelayed(new Runnable() {
+          @Override
+          public void run() {
+            loader.setVisibility(View.GONE);
+          }
+        },1000);
+
+
 
 
 
