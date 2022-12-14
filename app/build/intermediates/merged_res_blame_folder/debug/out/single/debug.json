@@ -12,12 +12,12 @@
         "source": "C:\\Users\\LAV RAJPUT\\StudioProjects\\New_Application\\app\\src\\main\\res\\drawable\\ic_close.xml"
     },
     {
-        "merged": "C:\\Users\\LAV RAJPUT\\StudioProjects\\New_Application\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_sort_by_alpha_24.xml.flat",
-        "source": "C:\\Users\\LAV RAJPUT\\StudioProjects\\New_Application\\app\\src\\main\\res\\drawable\\ic_baseline_sort_by_alpha_24.xml"
-    },
-    {
         "merged": "C:\\Users\\LAV RAJPUT\\StudioProjects\\New_Application\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_maps.xml.flat",
         "source": "C:\\Users\\LAV RAJPUT\\StudioProjects\\New_Application\\app\\src\\main\\res\\layout\\activity_maps.xml"
+    },
+    {
+        "merged": "C:\\Users\\LAV RAJPUT\\StudioProjects\\New_Application\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_sort_by_alpha_24.xml.flat",
+        "source": "C:\\Users\\LAV RAJPUT\\StudioProjects\\New_Application\\app\\src\\main\\res\\drawable\\ic_baseline_sort_by_alpha_24.xml"
     },
     {
         "merged": "C:\\Users\\LAV RAJPUT\\StudioProjects\\New_Application\\app\\build\\intermediates\\merged_res\\debug\\drawable_button_shape.xml.flat",
@@ -46,6 +46,10 @@
     {
         "merged": "C:\\Users\\LAV RAJPUT\\StudioProjects\\New_Application\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_back_arrow.xml.flat",
         "source": "C:\\Users\\LAV RAJPUT\\StudioProjects\\New_Application\\app\\src\\main\\res\\drawable\\ic_back_arrow.xml"
+    },
+    {
+        "merged": "C:\\Users\\LAV RAJPUT\\StudioProjects\\New_Application\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_directions_run_24.xml.flat",
+        "source": "C:\\Users\\LAV RAJPUT\\StudioProjects\\New_Application\\app\\src\\main\\res\\drawable\\ic_baseline_directions_run_24.xml"
     },
     {
         "merged": "C:\\Users\\LAV RAJPUT\\StudioProjects\\New_Application\\app\\build\\intermediates\\merged_res\\debug\\drawable_radio_btn_shape.xml.flat",

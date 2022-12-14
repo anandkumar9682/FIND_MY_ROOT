@@ -172,7 +172,7 @@ public final class LocDoa_Impl implements LocDoa {
 
   @Override
   public LiveData<List<LocModel>> getAllLocsAsc() {
-    final String _sql = "SELECT * FROM loc_table ORDER BY name ASC";
+    final String _sql = "SELECT * FROM loc_table ORDER BY distance ASC";
     final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 0);
     return __db.getInvalidationTracker().createLiveData(new String[]{"loc_table"}, false, new Callable<List<LocModel>>() {
       @Override
@@ -228,7 +228,7 @@ public final class LocDoa_Impl implements LocDoa {
 
   @Override
   public LiveData<List<LocModel>> getAllLocsDesc() {
-    final String _sql = "SELECT * FROM loc_table ORDER BY name DESC";
+    final String _sql = "SELECT * FROM loc_table ORDER BY distance DESC";
     final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 0);
     return __db.getInvalidationTracker().createLiveData(new String[]{"loc_table"}, false, new Callable<List<LocModel>>() {
       @Override

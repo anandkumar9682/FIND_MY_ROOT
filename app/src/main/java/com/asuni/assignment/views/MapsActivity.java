@@ -38,6 +38,7 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MapStyleOptions;
 import com.google.android.gms.maps.model.MarkerOptions;
@@ -411,26 +412,31 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
         List<LocModel> list = Home.adapter1.getCurrentList();
 
-        for( LocModel model : list ){
-
-            LatLng latLng = new LatLng( Double.parseDouble( model.getLat() ),Double.parseDouble( model.getLog() ) );
-            map.addMarker( new MarkerOptions().position(latLng).title( model.getAddress() ));
-
-        }
 
         LocModel model11 = list.get(0) ;
 
-        for( int i=1; i < list.size(); i++ ) {
+        LatLng latLng1 = new LatLng( Double.parseDouble( model11.getLat() ),Double.parseDouble( model11.getLog() ) );
+        map.addMarker( new MarkerOptions().position(latLng1).title( model11.getAddress() ).icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED)));
 
+
+        for( int i=1; i < list.size(); i++ ) {
 
             String origin = model11.getLat()+","+model11.getLog();
             String destination = list.get(i).getLat()+","+list.get(i).getLog();
+
+            LatLng latLng = new LatLng( Double.parseDouble( list.get(i).getLat() ),Double.parseDouble( list.get(i).getLog() ) );
+            map.addMarker( new MarkerOptions().position(latLng).title( model11.getAddress() ).icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN)));
 
             rootDraw( origin  , destination );
 
             model11 = list.get(i);
 
         }
+
+        latLng1 = new LatLng( Double.parseDouble( model11.getLat() ),Double.parseDouble( model11.getLog() ) );
+        map.addMarker( new MarkerOptions().position(latLng1).title( model11.getAddress() ).icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE)));
+
+
 
 
         if( !list.isEmpty()) {
@@ -441,9 +447,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
         map.getUiSettings().setZoomControlsEnabled(true);
 
-
-
     }
+
+
 
     public void rootDraw( String origin , String destination ){
 

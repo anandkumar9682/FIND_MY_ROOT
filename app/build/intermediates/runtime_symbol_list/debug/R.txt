@@ -2526,6 +2526,7 @@ int drawable edit_text_share 0x7f07007b
 int drawable googleg_disabled_color_18 0x7f07007c
 int drawable googleg_standard_color_18 0x7f07007d
 int drawable ic_back_arrow 0x7f07007e
+int drawable ic_baseline_directions_run_24 0x7f0700c2
 int drawable ic_baseline_sort_by_alpha_24 0x7f07007f
 int drawable ic_clock_black_24dp 0x7f070080
 int drawable ic_close 0x7f070081

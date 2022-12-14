@@ -37,6 +37,7 @@ import com.asuni.assignment.db.entity.LocModel;
 import com.asuni.assignment.viewmodels.ViewModal;
 import com.google.android.material.snackbar.Snackbar;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Home extends AppCompatActivity {
@@ -288,6 +289,7 @@ public class Home extends AppCompatActivity {
       });
 
     }
+
 
   }
 

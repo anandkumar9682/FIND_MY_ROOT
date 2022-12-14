@@ -26,10 +26,10 @@ public interface LocDoa {
     @Query("DELETE FROM loc_table")
     void deleteAllLocs();
 
-    @Query("SELECT * FROM loc_table ORDER BY name ASC")
+    @Query("SELECT * FROM loc_table ORDER BY distance ASC")
     LiveData<List<LocModel>> getAllLocsAsc();
 
-    @Query("SELECT * FROM loc_table ORDER BY name DESC")
+    @Query("SELECT * FROM loc_table ORDER BY distance DESC")
     LiveData<List<LocModel>> getAllLocsDesc();
 
     @Query("SELECT * FROM loc_table ORDER BY prioriry ASC")
