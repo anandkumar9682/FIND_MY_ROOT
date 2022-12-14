@@ -418,7 +418,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         LatLng latLng1 = new LatLng( Double.parseDouble( model11.getLat() ),Double.parseDouble( model11.getLog() ) );
         map.addMarker( new MarkerOptions().position(latLng1).title( model11.getAddress() ).icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED)));
 
-
         for( int i=1; i < list.size(); i++ ) {
 
             String origin = model11.getLat()+","+model11.getLog();
@@ -437,8 +436,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         map.addMarker( new MarkerOptions().position(latLng1).title( model11.getAddress() ).icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE)));
 
 
-
-
         if( !list.isEmpty()) {
             int mid = (int) list.size() / 2;
             LatLng fullRoutFor = new LatLng(Double.parseDouble(list.get(mid).getLat()), Double.parseDouble(list.get(mid).getLog()));
@@ -446,13 +443,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         }
 
         map.getUiSettings().setZoomControlsEnabled(true);
-
     }
 
-
-
     public void rootDraw( String origin , String destination ){
-
 
         List<LatLng> path = new ArrayList();
 
