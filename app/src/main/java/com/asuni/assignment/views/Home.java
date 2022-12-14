@@ -115,9 +115,6 @@ public class Home extends AppCompatActivity {
         },1000);
 
 
-
-
-
       }
     });
 
